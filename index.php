@@ -30,6 +30,8 @@ if (strpos($mail, '@')!== false && strpos($mail, '.')!== false) {
     echo "indirizzo mail non valido";
 }
 
+//verifico che il testo inserito dall'utente sia un numero intero e non una parola
+
 if (is_string($età)) {
     echo 'età inserita correttamente';
 }else {  
