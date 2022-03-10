@@ -26,9 +26,15 @@ if (strlen($nome) == 3) {
 
 if (strpos($mail, '@')!== false && strpos($mail, '.')!== false) {
     echo "indirizzo mail valido";
-    } else {
-        echo "indirizzo mail non valido";
-    }
+} else {
+    echo "indirizzo mail non valido";
+}
+
+if (is_string($età)) {
+    echo 'età inserita correttamente';
+}else {  
+    echo 'non hai inserito un numero';      
+}
 
 ?>
 
