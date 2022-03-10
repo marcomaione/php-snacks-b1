@@ -14,11 +14,21 @@ $mail = $_GET['mail'];
 $età = $_GET['età'];
 $login = [];
 
+// verifico che il nome inserito dall'utente sia più lungo di tre caratteri
+
 if (strlen($nome) == 3) {
     echo "Il nome deve avere lunghezza superiore a 3 caratteri";
 } else {
     echo " nome corretto ";
 }
+
+// verifico che la mail inserita dall'utente contenga la @ ed un punto, per essere valida
+
+if (strpos($mail, '@')!== false && strpos($mail, '.')!== false) {
+    echo "indirizzo mail valido";
+    } else {
+        echo "indirizzo mail non valido";
+    }
 
 ?>
 
